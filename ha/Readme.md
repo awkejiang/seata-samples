@@ -91,6 +91,7 @@ CREATE TABLE `undo_log` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `branch_id` bigint(20) NOT NULL,
   `xid` varchar(100) NOT NULL,
+  `context` varchar(128) NOT NULL,
   `rollback_info` longblob NOT NULL,
   `log_status` int(11) NOT NULL,
   `log_created` datetime NOT NULL,
@@ -138,7 +139,7 @@ CREATE TABLE `account_tbl` (
 
 ```xml
       <properties>
-          <seata.version>0.6.1</seata.version>
+          <seata.version>0.8.0</seata.version>
           <dubbo.alibaba.version>2.6.5</dubbo.alibaba.version>
        </properties>
         

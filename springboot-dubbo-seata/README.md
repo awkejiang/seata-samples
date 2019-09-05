@@ -32,7 +32,7 @@ then you will see ：
 +-------------------------+
 ```
 
-### 3. start Nacos
+### 3. start Nacos（使用1.1.0版本，防止因为dubbo，nacos因版本不匹配出现的心跳请求出错的情况。 v1.1.0地址：https://github.com/alibaba/nacos/releases/tag/1.1.0）
 
 Nacos quickstart：https://nacos.io/en-us/docs/quick-start.html
 
@@ -65,7 +65,7 @@ body：
 ```json
 {
     "userId":"1",
-    "commodityCode":"P190510529590122",
+    "commodityCode":"C201901140001",
     "name":"fan",
     "count":2,
     "amount":"100"
